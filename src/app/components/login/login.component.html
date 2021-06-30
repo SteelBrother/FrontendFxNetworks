@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="login">
+      <div class="login-triangle"></div>
+  
+      <h2 class="login-header">Log in</h2>
+  
+      <form [formGroup]="formLogin" class="login-container" (ngSubmit)="Login()">
+        <p>
+          <input type="email" name="Email" formControlName="Email" placeholder="Email" >
+        </p>
+        <p>
+          <input type="password" name="Password" formControlName="Password" placeholder="Password">
+        </p>
+        <p>
+          <!-- <input type="submit" value="Send"> -->
+          <button type="submit">
+                Iniciar Sesion
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>

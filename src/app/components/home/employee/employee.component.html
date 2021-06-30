@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="formEmployee" (ngSubmit)="SaveEmployee()">
+        <hr>
+        <div class="form-group">
+            <label for="name">Nombres:</label>
+            <input type="text" class="form-control" formControlName="name" id="name">
+          </div>
+        <hr>
+        <div class="form-group">
+            <label for="age">Edad:</label>
+            <input type="text" class="form-control" formControlName="age" id="age">
+          </div>
+        <hr>
+        <div class="form-group">
+            <label for="name">Salario:</label>
+            <input type="text" class="form-control" formControlName="salary" id="salary">
+          </div>
+        <hr>
+        <div class="form-group">
+            <label for="name">Cargo:</label>
+            <input type="text" class="form-control" formControlName="position" id="position">
+          </div>
+        <hr>
+        <div class="from-grup">
+            <button class="btn btn-success btn-lg btn-block" type="submit"><i class="fas fa-databae"></i>Guardar</button>
+        </div>
+    </form>
+    
+</div>
